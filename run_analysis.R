@@ -61,11 +61,9 @@ run_analysis<-function(){
                         filt<-comb[,c(1,2,filt.col.names)]
                           # Now we will group the filtered tbl by subjects and by activity.
                           grouped<-group_by(filt, Subjects, Activity_Names)
-                            # Finally we will summarise each variable for each subject and each activity.
+                            # Now we will summarise each variable for each subject and each activity.
                               summary<-summarise_each(grouped, funs(mean))
   
-  # Just to make sure that everything turned out how we expected it to we will print the summarised tbl at the end of the function.
+  # Finally we will print the summarised table.
   print(summary)
-  
-  
 }
