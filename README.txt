@@ -1,16 +1,15 @@
----
-title: "README.md"
-author: "Matt Blois"
-date: "Thursday, July 23, 2015"
-output: html_document
----
+==================================================================
+Title: "README.md"
+Author: "Matt Blois"
+==================================================================
 This is Matt Blois's repository for the Getting and Cleaning Data course project from Coursera.
+==================================================================
 
 The repository contains:
-1. README.md: A file that provides information about the data used in the project, explains the various files within the repository and provides an explanation of the R code for the function run_analysis.
+1. README.txt: A file that provides information about the data used in the project, lists the files within the repository and provides an explanation of the R code for the function run_analysis.
 2. A code book that describes the variables in the data set.
 3. run_analysis.R: An R script that downloads and organizes the "Human Activity Recognition Using Smartphones Data set Version 1.0" into a tidy, readable tbl.
----
+==================================================================
 
 The Data
 
@@ -35,7 +34,7 @@ For each record it is provided:
 For more information about this data set contact: activityrecognition@smartlab.ws"[1]
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
----
+==================================================================
 
 The R Script
 
@@ -90,7 +89,7 @@ run_analysis() is a function designed to:
                   # 
                   # NOTE: I decided not to modify the variable names given in the 'features.txt file'.  I considered the variable names sufficiently 
                   # descriptive, and I thought expanding the variable names would have made them cumbersome.  If there is any confusion about the 
-                  # meaning of a specific variable a detailed description can be found in 'codebook.md'
+                  # meaning of a specific variable a detailed description can be found in 'codebook.txt'
                     names<-tbl_df(read.table("UCI HAR Data set/features.txt", stringsAsFactors = FALSE))
                     names<-names$V2
                     colnames(comb)[3:563]<-names
