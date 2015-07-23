@@ -1,10 +1,10 @@
 run_analysis<-function(){
   # This is a function designed to:
   # 1. Download and unzip accelerometer data from smartphones attached to 30 different subjects performing different activities.
-  # 2. Merge the data tables containing information about the subjects, the activities and the measurements recorded by the smartphones. 
+  # 2. Merge the data tables containing information about the subjects, the activities performed and the measurements recorded by the smartphones. 
   # 3. Replace the activity code(1-6) with a descriptive activity name (walking, walking upstairs, walking downstairs, sitting, standing, laying).
   # 4. Applies descriptive variables names to all variables in the dataset.
-  # 5. Extracts only the measurements that measure mean and standar deviation.
+  # 5. Extracts only the measurements that measure mean and standard deviation.
   # 6. Creates a seperate data table that lists the average of each measurement for each subject and each activity.
   #
   # First we will create a new directory for the files we are going to download.
